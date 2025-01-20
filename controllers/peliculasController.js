@@ -44,7 +44,7 @@ const agregarPelicula = (req, res) => {
     }
 
     const query = `
-        INSERT INTO Peliculas (titulo, director, genero, puntuacion, rating, año)
+        INSERT INTO Peliculas (titulo, director, genero, puntuacion, rating, Anio_Publicacion)
         VALUES (?, ?, ?, ?, ?, ?)
     `;
     db.query(query, [titulo, director, genero, puntuacion, rating, año], (err, results) => {
